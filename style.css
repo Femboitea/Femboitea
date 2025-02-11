@@ -1,0 +1,91 @@
+/* Allgemeine Stile */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #7ec8e3, #d19fe8);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Navigation */
+header {
+    background: black;
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+/* Hauptbereiche */
+.main-section {
+    padding: 50px;
+}
+.welcome-box {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.buttons button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Inhaltsboxen */
+.content-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+/* Footer */
+footer {
+    background: black;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Img */
+.about-container {
+    display: flex;
+    flex-direction: row; /* Sorgt dafür, dass Bild & Text nebeneinander sind */
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Abstand zwischen Text & Bild */
+}
+
+.about-text {
+    flex: 1; /* Nimmt den verfügbaren Platz links ein */
+}
+
+.about-image {
+    flex-shrink: 0; /* Verhindert, dass das Bild zu klein wird */
+}
+
+.about-image img {
+    width: 300px; /* Bildgröße anpassen */
+    height: auto; /* Verhältnis beibehalten */
+    border-radius: 200px; /* Optionale runde Ecken */
+}
